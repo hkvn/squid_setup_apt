@@ -4,19 +4,19 @@ Clone source code
 
 cd /opt
 
-sudo apt update -y && apt install git -y
+sudo apt update -y && sudo apt install git -y
 
-git clone https://github.com/hkvn/squid_setup.git
+git clone https://github.com/hkvn/squid_setup_apt.git
 
 cd squid_setup
 
 Install
 
-bash proxy_setup.sh
+sudo bash proxy_setup.sh
 
 Start Squid
 
-/usr/local/squid/sbin/squid -f /etc/squid/squid.conf
+/etc/init.d/squid restart
 
 Test IP
 
