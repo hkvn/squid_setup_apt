@@ -8,7 +8,7 @@ sudo apt update -y && sudo apt install git -y
 
 git clone https://github.com/hkvn/squid_setup_apt.git
 
-cd squid_setup
+cd squid_setup_apt
 
 Install
 
