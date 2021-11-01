@@ -13,7 +13,9 @@ _cd squid_setup_apt_
 **Install**
 
 _sudo bash proxy_setup.sh_
+
 **Start Squid**
+
 _/etc/init.d/squid restart_
 
 **Test IP**
