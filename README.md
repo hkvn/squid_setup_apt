@@ -28,6 +28,7 @@ _printf "user:$(openssl passwd -apr1 PASSWORD)\n" >> /etc/squid/squid.auth_
 
 
 **Proxy Info**
+
 IP: Your Server IP
 
 Port: 10000
