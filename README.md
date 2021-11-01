@@ -1,27 +1,22 @@
 # squid_setup
 
-Clone source code
+****Clone source code**
 
-cd /opt
+_cd /opt_
+_sudo apt update -y && sudo apt install git -y_
+_git clone https://github.com/hkvn/squid_setup_apt.git_
+_cd squid_setup_apt_
 
-sudo apt update -y && sudo apt install git -y
+**Install**
 
-git clone https://github.com/hkvn/squid_setup_apt.git
+_sudo bash proxy_setup.sh_
+**Start Squid**
+_/etc/init.d/squid restart_
 
-cd squid_setup_apt
+**Test IP**
 
-Install
+_curl -x http://user:password@127.0.0.1:10000 https://ident.me_
 
-sudo bash proxy_setup.sh
+**Add User**
 
-Start Squid
-
-/etc/init.d/squid restart
-
-Test IP
-
-curl -x http://user:password@127.0.0.1:10000 https://ident.me
-
-Add User
-
-printf "user:$(openssl passwd -apr1 PASSWORD)\n" >> /etc/squid/squid.auth
+_printf "user:$(openssl passwd -apr1 PASSWORD)\n" >> /etc/squid/squid.auth_
