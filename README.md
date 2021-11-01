@@ -25,3 +25,10 @@ _curl -x http://user:password@127.0.0.1:10000 https://ident.me_
 **Add User**
 
 _printf "user:$(openssl passwd -apr1 PASSWORD)\n" >> /etc/squid/squid.auth_
+
+
+**Proxy Info**
+IP: Your Server IP
+Port: 10000
+User: proxy
+Password: Random when install (print on screen)
